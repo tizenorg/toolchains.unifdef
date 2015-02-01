@@ -8,7 +8,6 @@ URL: http://dotat.at/prog/unifdef/
 Source: http://dotat.at/prog/unifdef/%name-%version.tar.gz
 BuildRoot: %_tmppath/%name-%version-%release
 
-
 %description
 Unifdef is useful for removing ifdef'ed lines from a file while otherwise
 leaving the file alone.  Unifdef acts on #ifdef, #ifndef, #else, and #en­
