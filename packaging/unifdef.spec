@@ -1,7 +1,8 @@
 Summary: Removes ifdefs from C files.
 Name: unifdef
 Version: 2.3
-Release: 1
+Release: %{?release_prefix:%{release_prefix}.}1.44.%{?dist}%{!?dist:tizen}
+VCS:     external/unifdef#submit/trunk/20121022.015811-0-g24c5f44c59bb826a7240b862bd518e0c5fa7ba54
 License: BSD
 Group: Development/Tools
 URL: http://dotat.at/prog/unifdef/
@@ -42,16 +43,30 @@ rm -rf $RPM_BUILD_ROOT
 %_mandir/man1/unifdefall.1*
 
 %changelog
-* Wed May 12 2010 Bernhard Rosenkraenzer <bero@arklinux.org> 2.3-1ark
-- 2.3
-- Allow crosscompiling
-
-* Sun Jan 27 2008 Bernhard Rosenkraenzer <bero@arklinux.org> 1.0-3ark
-- Rebuild to get a package into the x86_64 tree
-
-* Sat Jul 15 2006 Bernhard Rosenkraenzer <bero@arklinux.org> 1.0-2ark
-- Compile it instead of allowing make install to use the binary in the
-  tarball
-
-* Tue May 23 2006 Bernhard Rosenkraenzer <bero@arklinux.org> 1.0-1ark
-- initial package
+* Mon Sep 16 2013 UkJung Kim <ujkim@samsung.com> - submit/trunk/20121022.015811 
+- PROJECT: external/unifdef
+- COMMIT_ID: 24c5f44c59bb826a7240b862bd518e0c5fa7ba54
+- PATCHSET_REVISION: 24c5f44c59bb826a7240b862bd518e0c5fa7ba54
+- CHANGE_OWNER: \"UkJung Kim\" <ujkim@samsung.com>
+- PATCHSET_UPLOADER: \"UkJung Kim\" <ujkim@samsung.com>
+- CHANGE_URL: http://slp-info.sec.samsung.net/gerrit/103654
+- PATCHSET_REVISION: 24c5f44c59bb826a7240b862bd518e0c5fa7ba54
+- TAGGER: UkJung Kim <ujkim@samsung.com>
+- Gerrit patchset approval info:
+- UkJung Kim <ujkim@samsung.com> Verified : 1
+- Newton Lee <newton.lee@samsung.com> Code Review : 2
+- CHANGE_SUBJECT: Initial commit
+- [Version] 2.3
+- [Project] GT-I8800
+- [Title] Initial commit
+- [BinType] PDA
+- [Customer] Open
+- [Issue#] N/A
+- [Problem] N/A
+- [Cause] N/A
+- [Solution]
+- [Team] SCM
+- [Developer] UkJung Kim <ujkim@samsung.com>
+- [Request] N/A
+- [Horizontal expansion] N/A
+- [SCMRequest] N/A
